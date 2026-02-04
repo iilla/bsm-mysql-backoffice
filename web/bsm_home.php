@@ -39,7 +39,7 @@ if (isset($_REQUEST['logout']) && $_REQUEST['logout']==1 && $ADM_SEC==1) {
 	<body>
 		<? require_once CONF."bsm_database.php"; ?>
 		<div id="container">
-			<div id="header"> <img src="<?=IMG."bsm_cabecera.jpg"?>"/></div>
+			<div id="header"> <img src="<?=IMG."bsm_cabecera.png"?>"/></div>
 			<div id="content">
 				<div id="leftside-menu">
 					<div id="menu-left-title" class="menu-left-item">Listado de tablas</div>
