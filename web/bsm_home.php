@@ -1,5 +1,5 @@
 ﻿<?php
-/* Author: Blackwood */
+/* Author: iilla */
 header('Content-Type: text/html; charset=utf-8');
 require_once "../config/bsm_ubicador.php";
 require_once CONF."bsm_settings.php";
