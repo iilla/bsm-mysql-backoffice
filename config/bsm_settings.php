@@ -1,69 +1,36 @@
 <?php
 
-	//Datos de conexi髇 para la base de datos
+	//Datos de conexi贸n para la base de datos
+	$DB_SET["db-hostname"]= "localhost";
+	$DB_SET["db-username"]= "root";
+	$DB_SET["db-password"]= "";
+	$DB_SET["db-name"]= "db_name";
 
-	/*
-	$DB_SET["db-type"]= "mysql";
-	$DB_SET["db-hostname"]= "www.krowtennetwork.com";
-	$DB_SET["db-username"]= "strd_user";
-	$DB_SET["db-password"]= "pilota.21.]";
-	$DB_SET["db-name"]= "stradivarius";
-	*/
+	//Nombre de la aplicaci贸n
+	$APP_NAME = "BACKOFFICE - STRANGE MANAGER";
 	
-	/*
-	$DB_SET["db-type"]= "mysql";
-	$DB_SET["db-hostname"]= "www.krowtennetwork.com";
-	$DB_SET["db-username"]= "blog_25";
-	$DB_SET["db-password"]= "tng.10.24";
-	$DB_SET["db-name"]= "krowtennetwork_blog";
-	*/
-	
-	/*
-	$DB_SET["db-type"]= "mysql";
-	$DB_SET["db-hostname"]= "joangwilkinson.ipagemysql.com";
-	$DB_SET["db-username"]= "asaidb";
-	$DB_SET["db-password"]= "1234";
-	$DB_SET["db-name"]= "asaidb";
-	*/
-	
-	//$DB_SET["db-type"]= "mysql";
-	/*
-	$DB_SET["db-hostname"]= "rdbms.strato.de";
-	$DB_SET["db-username"]= "U2832870";
-	$DB_SET["db-password"]= "RvPU1cVqkTIxyTq7E";
-	$DB_SET["db-name"]= "DB2832870";
-	*/
-
-	$DB_SET["db-hostname"]= "sql202.epizy.com";
-	$DB_SET["db-username"]= "epiz_25365282";
-	$DB_SET["db-password"]= "XygFwLvKnc2CL79";
-	$DB_SET["db-name"]= "epiz_25365282_portfolio_asai";
-
-	//Nombre de la aplicaci髇
-	$APP_NAME = "BACKOFFICE - STRADIVARIUS MAGAZINE";
-	
-	//Configuraci髇 de seguridad
+	//Configuraci贸n de seguridad
 	$ADM_SEC = 1; //Poner distinto de 1 para anular login screen
 	$ADM_USR = "sample"; 	//Usuario	
-	$ADM_PWD = "sample";  //contrase馻
+	$ADM_PWD = "sample";  //contrase帽a
 	
-	//codificamos las variables para que puedan contener car醕teres UTF8
+	//codificamos las variables para que puedan contener car谩cteres UTF8
 	$APP_NAME = utf8_encode($APP_NAME);
 	$ADM_USR = utf8_encode($ADM_USR);
 	$ADM_PWD = utf8_encode($ADM_PWD);
 	
-	//filtro, por si queremos mostrar solo informaci髇 de una o varias tablas en concreto
-	//Igualar ENABLE_TAB_FILTER a cero si no queremos filtro. 
-	$ENABLE_TAB_FILTER = 0;
+	//filtro, por si queremos mostrar solo informaci贸n de una o varias tablas en concreto
+	//Igualar ENABLE_TAB_FILTER a false si no queremos filtro. 
+	$ENABLE_TAB_FILTER = false;
 	
 	// especificar el nombre de las tablas que queremos filtrar.
-	if($ENABLE_TAB_FILTER!=0) {
-		$TAB_FILTER[] = "concurso_basico";
-		$TAB_FILTER[] = "puntuaciones_magazine";
-		$TAB_FILTER[] = "affiliate";
+	if($ENABLE_TAB_FILTER) {
+		$TAB_FILTER[] = "table_to_show_1";
+		$TAB_FILTER[] = "table_to_show_2";
+		$TAB_FILTER[] = "table_to_show_3";
 	}
 	
-	//registros por pagina m醲imos por defecto
+	//registros por pagina m谩ximos por defecto
 	$MAX_REG = 31;
 ?>
 	
