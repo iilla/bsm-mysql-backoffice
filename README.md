@@ -26,13 +26,13 @@
 ## 🛠️ Technologies Used
 
 <p>
-  The core of the application is made on **PHP 8.1**, displaying a dinamically generated **HTML** table based on the user input. It also uses few **javascript** scripts, based on **jQuery 1.9.1** for some of the small visual effects, such as floating boxes for long texts inside the table cells, pagination and displaying variable type of the selected fields to be filtered.        
+  The core of the application is made on <b>PHP 8.1</b>, displaying a dinamically generated <b>HTML</b> table based on the user input. It also uses few <b>javascript</b> scripts, based on <b>jQuery 1.9.1</b> for some of the small visual effects, such as floating boxes for long texts inside the table cells, pagination and displaying variable type of the selected fields to be filtered.        
 </p>
 
 ##  🚀 Usage
 
 <p>
-  The main index file is set inside the **web** folder. The logo can be changed by uploading a png image to the **style**/**img** folder named **bsm_cabecera.png**. All files can be uploaded to the desired domain and start the configuration from the **config**/**bsm_settings.php**. Inside the file the following variables can be configured: 
+  The main index file is set inside the <b>web</b> folder. The logo can be changed by uploading a png image to the <b>style</b>/<b>img</b> folder named <b>bsm_cabecera.png</b>. All files can be uploaded to the desired domain and start the configuration from the <b>config</b>/<b>bsm_settings.php</b>. Inside the file the following variables can be configured: 
 </p>
 
 | Variable       | Description                
